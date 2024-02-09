@@ -3,7 +3,9 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/BIS/BIS.iml" filepath="$PROJECT_DIR$/BIS/BIS.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ISCS/ISCS.iml" filepath="$PROJECT_DIR$/ISCS/ISCS.iml" />
       <module fileurl="file://$PROJECT_DIR$/ITProg/ITProg.iml" filepath="$PROJECT_DIR$/ITProg/ITProg.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaBasic/JavaBasic.iml" filepath="$PROJECT_DIR$/JavaBasic/JavaBasic.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/MyProjects.iml" filepath="$PROJECT_DIR$/.idea/MyProjects.iml" />
     </modules>
   </component>
