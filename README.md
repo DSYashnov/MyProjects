@@ -1,1 +1,1 @@
-# JavaRush
+# MyStudyJava
