@@ -10,11 +10,11 @@ public class MassArray {
         byte[][] nums = new byte[][]{
                 {5, 8},
                 {4, 3},
-                {2, 9}
         };
+        for (int i = 0; i < nums.length; i++) {
+            for (int j = 0; j < nums.length; j++)
+                System.out.println(nums[i][j]);
 
-        nums[1][1] = 67;
-        System.out.println(nums[1][1]);
-
+        }
     }
 }
