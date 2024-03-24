@@ -1,4 +1,4 @@
-package lec17;
+package lec19;
 
 public class Truck extends Transport {
     public Engine engine = new Engine();

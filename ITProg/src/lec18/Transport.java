@@ -1,4 +1,4 @@
-package lec17;
+package lec18;
 
 public abstract class Transport {
 
@@ -6,9 +6,6 @@ public abstract class Transport {
     private int weight;
     private String color;
     private byte[] coordinate;
-
-
-
 
     public Transport (float speed, int weight, String color, byte[] coordinate) {
         System.out.println("Object create");
@@ -36,20 +33,16 @@ public abstract class Transport {
         }
         return info + infoCoordinates;
     }
-
     class Engine {
         private boolean isReady;
         private int km;
-
         public void setValues(boolean isReady, int km){
             this.isReady = isReady;
             this.km = km;
         }
-
         public void isReady(boolean isReady){
             this.isReady = isReady;
         }
-
         public void info() {
             if(isReady){
                 System.out.println("Двигатель исправен");

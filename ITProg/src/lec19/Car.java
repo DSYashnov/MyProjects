@@ -1,9 +1,14 @@
-package lec17;
+package lec19;
 
-public class Car extends Transport {
+public class Car extends Transport implements ILights{
+
+    private boolean isOn = false;
     public Engine engine = new Engine();
     public Car (float speed, int weight, String color, byte[] coordinate) {
         super(speed, weight, color, coordinate);
+    }
+    public Car(){
+
     }
     @Override
     public void moveObject(float speed) {
@@ -13,5 +18,15 @@ public class Car extends Transport {
     public boolean stopObject() {
         this.speed = 0;
         return true;
+    }
+
+    @Override
+    public void setLight(boolean set) {
+        this.isOn = set;
+    }
+
+    @Override
+    public void blinkLight() {
+        System.out.println("Мы моргаем фарами");
     }
 }

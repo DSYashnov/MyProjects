@@ -5,8 +5,11 @@
       <module fileurl="file://$PROJECT_DIR$/BIS/BIS.iml" filepath="$PROJECT_DIR$/BIS/BIS.iml" />
       <module fileurl="file://$PROJECT_DIR$/ISCS/ISCS.iml" filepath="$PROJECT_DIR$/ISCS/ISCS.iml" />
       <module fileurl="file://$PROJECT_DIR$/ITProg/ITProg.iml" filepath="$PROJECT_DIR$/ITProg/ITProg.iml" />
-      <module fileurl="file://$PROJECT_DIR$/JavaBasic/JavaBasic.iml" filepath="$PROJECT_DIR$/JavaBasic/JavaBasic.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaBasicKirill/JavaBasicKirill.iml" filepath="$PROJECT_DIR$/JavaBasicKirill/JavaBasicKirill.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaBasicVallery/JavaBasicVallery.iml" filepath="$PROJECT_DIR$/JavaBasicVallery/JavaBasicVallery.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaRush/JavaRush.iml" filepath="$PROJECT_DIR$/JavaRush/JavaRush.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/MyProjects.iml" filepath="$PROJECT_DIR$/.idea/MyProjects.iml" />
+      <module fileurl="file://$PROJECT_DIR$/UdemyJavaBasic/UdemyJavaBasic.iml" filepath="$PROJECT_DIR$/UdemyJavaBasic/UdemyJavaBasic.iml" />
     </modules>
   </component>
 </project>
