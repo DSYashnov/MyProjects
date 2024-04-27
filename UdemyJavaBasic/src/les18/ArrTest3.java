@@ -13,5 +13,8 @@ public class ArrTest3 {
         for (int i = 0; i < arr1.length; i++) {
             System.out.print(arr1[i] + " ");
         }
+        System.out.println();
+        int indeex1 = Arrays.binarySearch(arr1, 2);
+        System.out.println(indeex1);
     }
 }
