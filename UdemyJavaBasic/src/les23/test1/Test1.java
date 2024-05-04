@@ -1,4 +1,4 @@
-package les23;
+package les23.test1;
 
 public class Test1 {
 //    public Object abc(){
@@ -35,6 +35,9 @@ public class Test1 {
         d2.walk();
 
         Employee emp4 = new Hirurg();
+        emp4.eat();
+        emp4.sleep();
+
     }
 }
 class Employee{
@@ -42,6 +45,7 @@ class Employee{
     String name;
     int age;
     int experience;
+    private int a = 5;
 
     void eat(){
         System.out.println("Eat");

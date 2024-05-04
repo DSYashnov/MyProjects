@@ -1,4 +1,4 @@
-package les23;
+package les23.test;
 
 public class Test {
     String abc(){
