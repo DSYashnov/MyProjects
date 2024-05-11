@@ -17,7 +17,7 @@ public class Test4 {
 }
 class Animal{
     void getName(){
-        System.out.println("Animal");
+        System.out.println("Test7");
     }
 }
 class Mouse extends Animal{
