@@ -22,4 +22,6 @@ public class Test2 {
 interface JumpAble{}
 class Human implements JumpAble{}
 class Man extends Human{}
-class Student{}
+class Student{
+
+}
