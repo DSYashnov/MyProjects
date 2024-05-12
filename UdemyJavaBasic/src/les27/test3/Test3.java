@@ -3,7 +3,7 @@ import java.io.*;
 
 public class Test3 {
     public static void main(String[] args) throws Exception {
-        File f = new File("test9.txt");
+        File f = new File("Test9.txt");
         FileInputStream fis = new FileInputStream(f);
         System.out.println("File its ok");
         fis.read();
