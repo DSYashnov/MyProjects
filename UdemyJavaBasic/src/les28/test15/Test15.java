@@ -1,4 +1,4 @@
-package les28.tets15;
+package les28.test15;
 
 public class Test15 {
     void maraphon(int temperatureInAir, int tempoInRun) throws PodvernutNiguException{
@@ -28,7 +28,6 @@ class PodvernutNiguException extends Exception{
         super(msg);
     }
     PodvernutNiguException(){
-
     }
 }
 class SveloMishouException extends RuntimeException{
