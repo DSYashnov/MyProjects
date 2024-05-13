@@ -1,4 +1,4 @@
-package workLearn.test5;
+package les27.workLearn.test5;
 
 public class Test5 {
     static void abc(){

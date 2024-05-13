@@ -1,4 +1,4 @@
-package workLearn.test2;
+package les27.workLearn.test2;
 
 public class Test2 {
     void abc() throws ArrayIndexOutOfBoundsException{

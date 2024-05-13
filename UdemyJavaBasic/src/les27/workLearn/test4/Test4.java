@@ -1,4 +1,4 @@
-package workLearn.test4;
+package les27.workLearn.test4;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -7,7 +7,7 @@ import java.io.IOException;
 
 public class Test4 {
     void abc() throws FileNotFoundException {
-        File f = new File("test8.txt");
+        File f = new File("Test8.txt");
             FileInputStream fis = new FileInputStream(f);
         int [] arr = {2, 1};
             System.out.println(arr[5]);
