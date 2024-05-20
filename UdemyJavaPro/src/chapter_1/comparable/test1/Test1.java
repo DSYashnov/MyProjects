@@ -1,4 +1,4 @@
-package Comparable;
+package chapter_1.comparable.test1;
 
 import java.util.ArrayList;
 import java.util.Collections;
