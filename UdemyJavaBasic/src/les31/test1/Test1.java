@@ -35,8 +35,8 @@ class Parent{
         String s = info.getValue();
     }
 }
-//class Child extends Parent{
-//    public void abc(Info <Integer> info) {
-//        Integer i = info.getValue();
-//    }
-//}
+class Child extends Parent{
+    public void abc(Info <Integer> info) {
+        Integer i = info.getValue();
+    }
+}
