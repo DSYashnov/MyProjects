@@ -1,4 +1,4 @@
-package work.dataRace_sinchrinizedMethods;
+package chapter_7.threadMethods.dataRace_sinchrinizedMethods;
 
 public class DataRaceEx {
     static int counter = 0;;
