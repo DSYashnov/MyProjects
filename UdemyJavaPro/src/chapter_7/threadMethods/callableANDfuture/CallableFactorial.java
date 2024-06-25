@@ -10,7 +10,11 @@ public class CallableFactorial {
         FactorialCalc factorialCalc = new FactorialCalc(5);
         Future<Integer> future = executorService.submit(factorialCalc);
         try {
+            System.out.println(future.isDone());
+            System.out.println("I want watch result");
             factorialResult = future.get();
+            System.out.println("thanks that result");
+            System.out.println(future.isDone());
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         } catch (ExecutionException e) {
@@ -36,6 +40,7 @@ class FactorialCalc implements Callable<Integer> {
         int result = 1;
         for (int i = 1; i <= f; i++) {
             result *= i;
+            Thread.sleep(1000);
         }
         return result;
     }
