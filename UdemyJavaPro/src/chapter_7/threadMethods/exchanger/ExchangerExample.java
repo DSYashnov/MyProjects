@@ -31,7 +31,7 @@ class BestFriend extends Thread {
     }
 
     private void whoWins (Action myAction, Action friendAction) {
-        if (myAction == Action.KAMEN && Action.NOJNICSY == friendAction
+                if (myAction == Action.KAMEN && Action.NOJNICSY == friendAction
                 || (myAction == Action.NOJNICSY && friendAction == Action.BUMAGA)
                 || (myAction == Action.BUMAGA && friendAction == Action.KAMEN)) {
             System.out.println(name + " WINS!!!!!!!!!");
