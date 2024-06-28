@@ -31,7 +31,9 @@ class BestFriend extends Thread {
     }
 
     private void whoWins (Action myAction, Action friendAction) {
-        if (myAction == Action.KAMEN && Action.NOJNICSY == friendAction || myAction == Action.NOJNICSY && friendAction == Action.BUMAGA || myAction == Action.BUMAGA && friendAction == Action.KAMEN) {
+        if (myAction == Action.KAMEN && Action.NOJNICSY == friendAction
+                || (myAction == Action.NOJNICSY && friendAction == Action.BUMAGA)
+                || (myAction == Action.BUMAGA && friendAction == Action.KAMEN)) {
             System.out.println(name + " WINS!!!!!!!!!");
         }
     }
@@ -44,7 +46,7 @@ class BestFriend extends Thread {
                   whoWins(action, reply);
                   sleep(2000);
               } catch (InterruptedException e) {
-                  throw new RuntimeException(e);
+                  e.printStackTrace();
               }
               System.out.println();
           }
