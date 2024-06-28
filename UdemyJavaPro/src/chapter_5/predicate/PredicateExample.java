@@ -46,7 +46,7 @@ public class PredicateExample {
         Predicate<Student> p1 = student -> student.avgGrade > 7.5;
         Predicate<Student> p2 = student -> student.sex == 'm';
 
-        inst.testStudents(students, p1.and(p2));
+        inst.testStudents(students, p1.negate());
 
 //        System.out.println("------------------");
 //

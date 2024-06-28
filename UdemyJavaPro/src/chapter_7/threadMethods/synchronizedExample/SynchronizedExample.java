@@ -1,4 +1,4 @@
-package work.synchronizedExample;
+package chapter_7.threadMethods.synchronizedExample;
 
 public class SynchronizedExample {
    public static void main(String[] args) {
