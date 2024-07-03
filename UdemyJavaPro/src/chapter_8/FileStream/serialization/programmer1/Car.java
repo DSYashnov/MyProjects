@@ -1,4 +1,4 @@
-package work.chapter_8.serialization.programmer1;
+package chapter_8.FileStream.serialization.programmer1;
 
 import java.io.Serializable;
 
