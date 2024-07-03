@@ -1,4 +1,4 @@
-package work.chapter_8.CopyExample;
+package chapter_8.FileStream.CopyExample;
 
 import java.io.*;
 
