@@ -1,4 +1,4 @@
-package work.chapter_8.dataInputStream;
+package chapter_8.FileStream.dataInputStream;
 
 import java.io.*;
 
@@ -6,8 +6,8 @@ public class DataInputStreamExample {
     public static void main(String[] args) {
         try (DataOutputStream dataOutputStream = new DataOutputStream(
                 new FileOutputStream("my_test.bin"));
-            DataInputStream dataInputStream = new DataInputStream(
-                    new FileInputStream("my_test.bin"));
+             DataInputStream dataInputStream = new DataInputStream(
+                     new FileInputStream("my_test.bin"));
         ){
             dataOutputStream.writeBoolean(true);
             dataOutputStream.writeByte(5);

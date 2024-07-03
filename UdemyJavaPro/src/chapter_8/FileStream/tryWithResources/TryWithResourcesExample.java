@@ -1,4 +1,4 @@
-package work.chapter_8.tryWithResources;
+package chapter_8.FileStream.tryWithResources;
 
 import java.io.FileWriter;
 import java.io.IOException;

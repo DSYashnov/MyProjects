@@ -7,16 +7,16 @@ import java.util.concurrent.Exchanger;
 public class ExchangerExample {
     public static void main(String[] args) {
         Exchanger<Action> exchanger = new Exchanger<>();
-        List<Action> actions = new ArrayList<>();
-        actions.add(Action.KAMEN);
-        actions.add(Action.BUMAGA);
-        actions.add(Action.NOJNICSY);
-        List<Action> actions2 = new ArrayList<>();
-        actions2.add(Action.BUMAGA);
-        actions2.add(Action.KAMEN);
-        actions2.add(Action.KAMEN);
-        new BestFriend("Stanislav", actions, exchanger);
-        new BestFriend("Kamen", actions2, exchanger);
+        List<Action> friend1Action = new ArrayList<>();
+        friend1Action.add(Action.KAMEN);
+        friend1Action.add(Action.BUMAGA);
+        friend1Action.add(Action.NOJNICSY);
+        List<Action> friend2Action = new ArrayList<>();
+        friend2Action.add(Action.BUMAGA);
+        friend2Action.add(Action.KAMEN);
+        friend2Action.add(Action.KAMEN);
+        new BestFriend("Stanislav", friend1Action, exchanger);
+        new BestFriend("Kamen", friend2Action, exchanger);
     }
 }
 enum Action {
@@ -28,12 +28,14 @@ class BestFriend extends Thread {
         this.name = name;
         this.myActions = myActions;
         this.exchanger = exchanger;
+        this.start();
     }
 
     private void whoWins (Action myAction, Action friendAction) {
-                if (myAction == Action.KAMEN && Action.NOJNICSY == friendAction
+                if ((myAction == Action.KAMEN && friendAction == Action.NOJNICSY)
                 || (myAction == Action.NOJNICSY && friendAction == Action.BUMAGA)
-                || (myAction == Action.BUMAGA && friendAction == Action.KAMEN)) {
+                || (myAction == Action.BUMAGA && friendAction == Action.KAMEN))
+                {
             System.out.println(name + " WINS!!!!!!!!!");
         }
     }

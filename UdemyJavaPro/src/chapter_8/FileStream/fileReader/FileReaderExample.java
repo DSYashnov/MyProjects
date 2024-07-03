@@ -1,4 +1,4 @@
-package work.chapter_8.fileReader;
+package chapter_8.FileStream.fileReader;
 
 import java.io.FileNotFoundException;
 import java.io.FileReader;
