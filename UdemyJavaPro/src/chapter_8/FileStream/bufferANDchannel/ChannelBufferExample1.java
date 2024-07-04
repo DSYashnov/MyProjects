@@ -1,10 +1,7 @@
 package chapter_8.FileStream.bufferANDchannel;
 
-import chapter_8.FileStream.file.FileExample;
 
-import java.io.FileNotFoundException;
-import java.io.IOException;
-import java.io.RandomAccessFile;
+import java.io.*;
 import java.nio.ByteBuffer;
 import java.nio.channels.FileChannel;
 
@@ -29,7 +26,17 @@ public class ChannelBufferExample1 {
             }
             System.out.println(stih);
 
-            String text = "Hello";
+            String text = "\nThere are only two ways to live your life."
+            + "One is as though nothing is a miracle. The other is as" +
+                    " though everything is a miracle.";
+
+            ByteBuffer buffer2 = ByteBuffer.wrap(text.getBytes());
+            channel.write(buffer2);
+//
+//            ByteBuffer buffer2 = ByteBuffer.allocate(text.getBytes().length);
+//            buffer2.put(text.getBytes());
+//            buffer2.flip();
+//            channel.write(buffer2);
 
         } catch (FileNotFoundException e) {
             throw new RuntimeException(e);
