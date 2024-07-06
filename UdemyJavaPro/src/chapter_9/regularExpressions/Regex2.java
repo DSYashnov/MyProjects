@@ -38,9 +38,20 @@ public class Regex2 {
 //        String s1 = "abcd!?abce===abc++ 5fabcg6abch";
 //        Pattern pattern = Pattern.compile("\\W+");
 
-        String s1 = "poka abc Stanislav home film";
-        Pattern pattern = Pattern.compile("\\w{4}");
+//        String s1 = "poka abc Stanislav home film";
+//        Pattern pattern = Pattern.compile("\\w{4}");
 
+//        String s1 = "poka     abc   Stanislav         home   film";
+//        Pattern pattern = Pattern.compile("\\w\\S+\\W");
+
+//        String s1 = "poka abc3 Stanislav home film!!!!!!!!!!!!!";
+//        Pattern pattern = Pattern.compile("\\D{2,}");
+
+//        String s1 = "DADCDABABDABABABABD";
+//        Pattern pattern = Pattern.compile("D(AB){2,3}");
+
+        String s1 = "abcd abce abc5fabcg6abch";
+        Pattern pattern = Pattern.compile("[abcd][efgh3-8]");
 
         Matcher matcher = pattern.matcher(s1);
         while (matcher.find()) {
