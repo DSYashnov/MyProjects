@@ -16,11 +16,11 @@ public class GroupExample {
 
 //        String myNewString = matcher.replaceAll
 //                ("$5/$6/ $1 $2 $3 $4 ($7)");
-//
 //        System.out.println(myNewString);
 
+
         while(matcher.find()){
-            System.out.println(matcher.group());
+            System.out.println(matcher.group(7));
         }
 
     }
