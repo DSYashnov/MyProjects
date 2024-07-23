@@ -5,7 +5,9 @@ public class Example1 {
         System.out.println("hello");
         for (int i = 0; i < 10; i++) {
             System.out.println(i);
+
         }
+
         System.out.println("bye");
     }
 }
