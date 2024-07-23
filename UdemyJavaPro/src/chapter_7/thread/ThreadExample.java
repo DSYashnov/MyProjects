@@ -14,8 +14,6 @@ public class ThreadExample extends Thread {
             System.out.println(i);
         }
 
-
-
 //        MyThread myThread = new MyThread();
 //        MyThread2 myThread2 = new MyThread2();
 //
