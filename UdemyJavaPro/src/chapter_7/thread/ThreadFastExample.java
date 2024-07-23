@@ -10,5 +10,6 @@ public class ThreadFastExample {
         }).start();
 
         new Thread(() -> System.out.println("hello")).start();
+
     }
 }
